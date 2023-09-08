@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sticky-container {
+            height: 300vh;
+            position: relative;
+            display: flex;
+        }
+        .inner-left{ 
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            width: 50%;
+            background-color: pink;
+            
+        }
+
+        .inner-right > p {
+            margin-bottom: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-container">
+        <div class="inner-left"></div>
+        <div class="inner-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum hic dolore ab, unde asperiores rerum doloremque, nemo veniam aliquid distinctio saepe dignissimos, eum et tenetur. Quam culpa laboriosam provident.</p>
+        </div>
+    </div>
+
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+    <h2>새로운컨텐츠</h2>
+
+    <script>
+
+        const sc = document.querySelector('.sticky-container')
+        window.addEventListener('scroll', ()=>{
+            console.log(sc.getBoundingClientRect().top)
+        })
+    </script>
+</body>
+</html>
