@@ -142,9 +142,13 @@ function setInitialPos() {
 }
 
 nextBtn.addEventListener('click', function() {
+    stopSlide()
+    autoSlide()
  moveSlide(currentIndex + 1);
 })
 prevBtn.addEventListener('click', function() {
+    stopSlide()
+    autoSlide()
  moveSlide(currentIndex - 1);
 })
 
@@ -169,11 +173,13 @@ function moveSlide(num) {
 
 let timer = undefined;
 
+function nextSlide() {
+    moveSlide(currentIndex + 1);
+}
+
 function autoSlide() {
  if(timer == undefined) {
-  timer = setInterval(() => {
-   moveSlide(currentIndex + 1);
-  }, 3000);
+  timer = setInterval(nextSlide, 3000);
  }
 }
 autoSlide();
@@ -228,3 +234,6 @@ window.addEventListener('scroll', ()=> {
 //  slider.style.transform = `translateX(-${scrollLeft}px)`;
 
 })
+
+
+// next버튼 작동 시 시간 멈추기 기능
