@@ -30,7 +30,7 @@ a {
 
 body {
  /* width: calc(1920px - (100vw - 100%)); */
- /* overflow-x: hidden; */
+ overflow-x: hidden;
 }
 
 /* body > header-container */
@@ -299,7 +299,9 @@ header.open-menu {
 .section-slide-btn:hover {
  transform: scale(1.2);
 }
-
+.section-content-btn:hover {
+ box-shadow: #e5843b;
+}
 
 
 
@@ -315,9 +317,11 @@ header.open-menu {
  border-radius: 0px;
 
 }
+
 .content-container-wrapper {
  background-color: black;
 }
+
 .section-content {
  background-color: beige;
  width: 1200px;
@@ -723,6 +727,7 @@ header.open-menu {
  height: 100vh;
  background-color: beige;
 }
+
 .container {
  width: 100%;
  height: 100vh;
@@ -734,23 +739,25 @@ header.open-menu {
 .text-title-wrapper {
  font-size: 32px;
  font-weight: 700;
- margin: 32px 24px;
+ margin: 12px  24px 0;
 }
 
 .slide-list-btn {
  cursor: pointer;
- margin-top: 12px;
- font-size: 24px;
+ margin-top: 8px;
+ font-size: 22px;
  font-weight: 600;
 }
 
 .slide-list-btn:hover {
  color: darkgray;
 }
+
 .slide-list-btn p {
  font-size: 18px;
  line-height: 1.5em;
 }
+
 .slide-wrapper {
  position: relative;
  top: 50%;
@@ -770,9 +777,10 @@ header.open-menu {
  top: 0;
  display: flex;
 }
+
 .slides li img {
-    cursor: pointer;
-    border-radius: 20px;
+ cursor: pointer;
+ border-radius: 20px;
 }
 
 
@@ -815,24 +823,34 @@ header.open-menu {
  display: flex;
  justify-content: center;
  align-items: center;
+ border-radius: 20px;
+ height: 93%;
+ /* background-color: gray; */
+
 }
+
 .prev {
  width: 100px;
  height: 80%;
  opacity: 0;
  transition: all 0.5s;
 }
+
 .prev:hover {
+ height: 93%;
  background-color: rgba(231, 231, 231, 0.253);
  opacity: 1;
 }
+
 .next {
  width: 100px;
  height: 80%;
  opacity: 0;
  transition: all 0.5s;
 }
+
 .next:hover {
+ height: 93%;
  background-color: rgba(231, 231, 231, 0.253);
  opacity: 1;
 }
@@ -864,6 +882,7 @@ header.open-menu {
  display: flex;
  position: relative;
 }
+
 .etc-wrapper {
  display: flex;
  position: sticky;
@@ -876,6 +895,7 @@ header.open-menu {
  padding: 0 200px;
  display: flex;
 }
+
 .etc-text-content {
  display: flex;
  justify-content: space-between;
@@ -1004,14 +1024,17 @@ header.open-menu {
  gap: 16px;
  font-family: 'NanumSquareNeo-Variable';
 }
+
 .footer-etc-menu span::after {
  content: "|";
  color: rgb(200, 200, 200);
 }
+
 .footer-etc-menu span:last-child::after {
  content: " ";
 
 }
+
 .footer-address {
  /* border: 1px solid black; */
  padding: 0 20px;
