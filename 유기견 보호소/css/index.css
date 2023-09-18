@@ -3,6 +3,19 @@
 /* 폰트 설정하기 */
 /* a tag */
 /* font-family: 'Nanum Gothic Coding', monospace; */
+
+
+@media screen and (max-width: ) {
+    
+}
+
+
+
+
+
+
+
+
 @font-face {
  font-family: 'NanumSquareNeo-Variable';
  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
@@ -114,6 +127,7 @@ header {
  margin-top: 18px;
  left: 7px;
  box-shadow: 1rem 1rem 30rem 0rem rgba(95, 95, 95, 0.5);
+ border-radius: 20px;
 
 }
 
@@ -230,8 +244,13 @@ header.open-menu {
 .section-main {
  background-color: black;
  font-family: 'NanumSquareNeo-Variable';
+ position: fixed;
+ height: 100vh;
+ width: 100%;
 }
-
+.section-main.change {
+    position: absolute;
+}
 .section-main-container {
  background-image: url(/img/dog-1846742_1280.jpg);
  max-width: 100%;
@@ -320,6 +339,7 @@ header.open-menu {
 
 .content-container-wrapper {
  background-color: black;
+ padding-top: 100vh;
 }
 
 .section-content {
@@ -414,7 +434,14 @@ header.open-menu {
  gap: 16px;
  padding: 50px;
 }
-
+.opacity-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    top: 80px;
+}
 .opacity-text.active {
  opacity: 1;
  transition: all 1s;
@@ -824,33 +851,33 @@ header.open-menu {
  justify-content: center;
  align-items: center;
  border-radius: 20px;
- height: 93%;
+ height: 71%;
  /* background-color: gray; */
 
 }
 
 .prev {
  width: 100px;
- height: 80%;
+ /* height: 80%; */
  opacity: 0;
  transition: all 0.5s;
 }
 
 .prev:hover {
- height: 93%;
+ height: 71%;
  background-color: rgba(231, 231, 231, 0.253);
  opacity: 1;
 }
 
 .next {
  width: 100px;
- height: 80%;
+ height: 71%;
  opacity: 0;
  transition: all 0.5s;
 }
 
 .next:hover {
- height: 93%;
+ height: 71%;
  background-color: rgba(231, 231, 231, 0.253);
  opacity: 1;
 }
