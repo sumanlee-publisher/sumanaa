@@ -5,9 +5,7 @@
 /* font-family: 'Nanum Gothic Coding', monospace; */
 
 
-@media screen and (max-width: ) {
-    
-}
+@media screen and (max-width:) {}
 
 
 
@@ -248,9 +246,11 @@ header.open-menu {
  height: 100vh;
  width: 100%;
 }
+
 .section-main.change {
-    position: absolute;
+ position: absolute;
 }
+
 .section-main-container {
  background-image: url(/img/dog-1846742_1280.jpg);
  max-width: 100%;
@@ -318,6 +318,7 @@ header.open-menu {
 .section-slide-btn:hover {
  transform: scale(1.2);
 }
+
 .section-content-btn:hover {
  box-shadow: #e5843b;
 }
@@ -434,14 +435,16 @@ header.open-menu {
  gap: 16px;
  padding: 50px;
 }
+
 .opacity-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    position: relative;
-    top: 80px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 24px;
+ position: relative;
+ top: 80px;
 }
+
 .opacity-text.active {
  opacity: 1;
  transition: all 1s;
@@ -766,7 +769,7 @@ header.open-menu {
 .text-title-wrapper {
  font-size: 32px;
  font-weight: 700;
- margin: 12px  24px 0;
+ margin: 12px 24px 0;
 }
 
 .slide-list-btn {
@@ -1014,7 +1017,7 @@ header.open-menu {
 
 /*  footer */
 #footer {
- background-color: gray;
+ background-color: black;
  padding: 40px 0;
  z-index: 1;
  position: absolute;
@@ -1054,7 +1057,7 @@ header.open-menu {
 
 .footer-etc-menu span::after {
  content: "|";
- color: rgb(200, 200, 200);
+ color: white;
 }
 
 .footer-etc-menu span:last-child::after {
@@ -1065,7 +1068,7 @@ header.open-menu {
 .footer-address {
  /* border: 1px solid black; */
  padding: 0 20px;
- color: darkgray;
+ color: white;
  font-size: 13px;
 }
 
@@ -1074,7 +1077,7 @@ header.open-menu {
 }
 
 .footer-end {
- color: darkgray;
+ color: white;
  font-size: 13px;
 }
 
