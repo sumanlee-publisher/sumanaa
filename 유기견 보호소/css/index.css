@@ -1,19 +1,3 @@
-/* Y축 ⬇️⬆️ */
-/* X축 ⬅️➡️ */
-/* 폰트 설정하기 */
-/* a tag */
-/* font-family: 'Nanum Gothic Coding', monospace; */
-
-
-@media screen and (max-width:) {}
-
-
-
-
-
-
-
-
 @font-face {
  font-family: 'NanumSquareNeo-Variable';
  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
@@ -33,11 +17,11 @@ a {
  /* color: black; */
 }
 
-.under-line {
+/* .under-line {
  font-weight: 700;
  font-size: 32px;
  font-family: 'NanumSquareNeo-Variable';
-}
+} */
 
 body {
  /* width: calc(1920px - (100vw - 100%)); */
@@ -126,6 +110,19 @@ header {
  left: 7px;
  box-shadow: 1rem 1rem 30rem 0rem rgba(95, 95, 95, 0.5);
  border-radius: 20px;
+
+}
+.header-inner-menu.mobile {
+ display: none;
+ position: absolute;
+ /* height: 0; */
+ width: 130%;
+ /* overflow: hidden; */
+ background-color: white;
+ margin-top: 18px;
+ left: 7px;
+ /* box-shadow: 1rem 1rem 30rem 0rem rgba(95, 95, 95, 0.5); */
+ /* border-radius: 20px; */
 
 }
 
@@ -754,22 +751,30 @@ header.open-menu {
 /*  slider-content-container */
 .slider-content-container {
  width: 100%;
- height: 100vh;
- background-color: beige;
+ height: 1100px;
+ position: relative;
+ /* background-color: beige; */
 }
 
 .container {
  width: 100%;
  height: 100vh;
  display: flex;
- flex-direction: column;
+ align-items: center;
  font-family: 'NanumSquareNeo-Variable';
+ position: sticky;
+ top: 0;
 }
-
 .text-title-wrapper {
+ margin: 0 24px;
+}
+.text-title-wrapper p:nth-child(1) {
  font-size: 32px;
  font-weight: 700;
- margin: 12px 24px 0;
+}
+.text-title-wrapper p:nth-child(2) {
+ font-size: 18px;
+ line-height: 1.4em;
 }
 
 .slide-list-btn {
@@ -790,8 +795,8 @@ header.open-menu {
 
 .slide-wrapper {
  position: relative;
- top: 50%;
- left: 50%;
+ top: 55%;
+ left: 40%;
  transform: translate(-50%, -50%);
  width: 1000px;
  height: 100%;
@@ -854,34 +859,34 @@ header.open-menu {
  justify-content: center;
  align-items: center;
  border-radius: 20px;
- height: 71%;
+ height: 100%;
  /* background-color: gray; */
 
 }
 
 .prev {
  width: 100px;
- /* height: 80%; */
+ height: 100%;
  opacity: 0;
  transition: all 0.5s;
 }
 
 .prev:hover {
- height: 71%;
- background-color: rgba(231, 231, 231, 0.253);
+ height: 100%;
+ /* background-color: rgba(231, 231, 231, 0.253); */
  opacity: 1;
 }
 
 .next {
  width: 100px;
- height: 71%;
+ height: 100%;
  opacity: 0;
  transition: all 0.5s;
 }
 
 .next:hover {
- height: 71%;
- background-color: rgba(231, 231, 231, 0.253);
+ height: 100%;
+ /* background-color: rgba(231, 231, 231, 0.253); */
  opacity: 1;
 }
 
@@ -1081,8 +1086,119 @@ header.open-menu {
  font-size: 13px;
 }
 
-/* 1920px - calc( 100vw - 100% )
- */
-/* letter-spacing: 1em;  글자 사이의 간격(자간)*/
-/* word-spacing: ; 단어 사이의 간격(어간)*/
-/* line-height: ; 행 사의 간격(행간) */
+@media screen and (max-width: 800px ) {
+ .header-title {
+  font-size: 18px;
+ }
+ .header-navi, .header-right {
+  display: none;
+ }
+ .hamburger-btn {
+  position: absolute;
+  right: 32px;
+  top: 40%;
+  font-size: 24px;
+  color: black;
+ }
+ .content-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+ }
+ .section-content {
+  width: 100%;
+ }
+ .renewal-content-top {
+  padding-top: 0;
+  /* font-size: 12px; */
+ }
+ .section-content-btn {
+  margin-top: 0;
+ }
+ .content-wrapper {
+  flex-direction: column;
+  gap: 8px;
+ }
+ .starting-intro {
+  margin-top: 70px;
+ }
+ .bold-text {
+  /* font-size: 28px; */
+ }
+ .semi-bold-text {
+  /* font-size: 16px; */
+ }
+ .opacity-wrapper {
+  top: 50%;
+ }
+
+
+
+}
+@media screen and (max-width: 800px) {
+ .real-sticky-wrapper {
+  /* flex-direction: column; */
+ }
+ .sticky-img {
+  display: none;
+ }
+ .media-query-img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+ }
+ .sticky-image-container {
+  display: none;
+ }
+}
+
+.media-query-img {
+ /* display: none; */
+}
+
+
+
+.hamburger:hover {
+ /* display: block; */
+}
+
+/* 모바일버젼 */
+.head-container {
+ display: flex;
+ flex-direction: row-reverse;
+}
+
+.menu {
+ width: 100%;
+ overflow: hidden;
+ /* margin: 150px auto; */
+ /* display: none; */
+}
+.menu > li {
+ width: 100%;
+ text-align: center;
+ line-height: 40px;
+ background-color: #5778ff;
+}
+.menu a {
+ color: #fff;
+}
+.submenu > li {
+ line-height: 50px;
+ background-color: #94a9ff;
+}
+.submenu {
+ height: 0;
+ overflow: hidden;
+}
+.menu > li:hover .submenu {
+ background-color: #94a9ff;
+ transition-duration: 0.5s;
+}
+.menu > li:hover .submenu {
+ height: 250px;
+ transition-duration: 1s;
+}

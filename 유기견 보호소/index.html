@@ -13,6 +13,7 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/eb6d8e7992.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,16 +21,19 @@
   <div class="header-flex">
    <a href="#" class="header-title">종합 유기견 보호소</a>
    <div>
+    <a href="#" class="hamburger-btn"><i class="fa-solid fa-bars"></i></a>
     <ul class="header-navi">
-     <li class="menu-title"><a href="#">사업 소개</a>
-      <ul class="header-inner-menu">
+     <li class="menu-title">
+      <a href="#">사업 소개</a>
+      <ul class="header-inner-menu mobile">
        <li><a href="#">보호소 소개</a></li>
        <li><a href="#">유기견 현황</a></li>
        <li><a href="#">협력업체</a></li>
        <li><a href="#">후원자 명단</a></li>
       </ul>
      </li>
-     <li class="menu-title"><a href="#">실종 신고</a>
+     <li class="menu-title">
+      <a href="#">실종 신고</a>
       <ul class="header-inner-menu">
        <li><a href="#">긴급등록</a></li>
        <li><a href="#">지역별 신고 현황</a></li>
@@ -141,17 +145,7 @@
     </div>
    </div>
   </div>
-  <!-- 배경사진놔두고 글씨만 나왔다 스크롤에 사라지게 만들기 -->
  </div>
-
-
-
- <!--  -->
- <!-- <div class="dog-img-container"><img src="img/" alt=""></div> -->
- <!-- <div class="dog-img-container help"><img src="img/3bfd606fe9f1f03dd443389bb6060c8e.jpg" alt=""></div> -->
- <!-- <div class="dog-img-container another-family"><img src="img/5bbfc30dfe29c8b1431a53be432cbe4b.jpg" alt=""></div> -->
- <!-- <div class="dog-img-container gps"><img src="img/dog-5934821_1920.jpg" alt=""></div> -->
- <!-- <div class="dog-img-container dog-toy"><img src="img/dog-2901704_1920.jpg" alt=""></div> -->
 
  <div class="section-sticky-container">
   <div class="real-sticky-wrapper"> <!--sticky-container-->
@@ -160,13 +154,13 @@
     <div class="sticky-img"><img src="img/574bb7cf1de069c22f5251c5272e2f27.jpg" alt=""></div>
     <div class="sticky-img"><img src="img/b028a76e5883e5f3ff07d8c550d9432d.jpg" alt=""></div>
     <div class="sticky-img"><img src="img/6718ac39c9e132494bbc16924e73f547.jpg" alt=""></div>
-    <!-- <div class="sticky-img"><img src="img/1843066b0c99b5d9d19ea0facc889fa0.jpg" alt=""></div> -->
-    <!-- opacity로 속성변경 -->
+    
    </div>
    <div class="text-content"> <!-- inner-right -->
     <div class="sticky-header-name">종합 유기견 보호소는<p>이런 활동을 하고 있습니다.</p>
     </div>
     <div class="sticky-list">
+     <div class="media-query-img"><img src="img/1843066b0c99b5d9d19ea0facc889fa0.jpg" alt=""></div>
      <p class="sticky-middle-title">새로운 가족을 찾고 있습니다.</p>
      <p class="sticky-content-title">입양 전 준비활동</p>
      <p class="sticky-content">유기견의 종류와 특성을 구분해 그룹, 개별 교육으로 진행하며 <br> 주차별로 간단한 명령어 이행, 배변훈련, 문제행동 교정, 미용, 산책 교육 등을 시키고
@@ -174,11 +168,13 @@
      </p>
     </div>
     <div class="sticky-list">
+     <div class="media-query-img"><img src="img/574bb7cf1de069c22f5251c5272e2f27.jpg" alt=""></div>
      <p class="sticky-middle-title">유기동물 구조 활동</p>
      <p class="sticky-content-title">지역 내 동물단체와 협업을 통해 유기견을 구조에 나서고 있습니다.</p>
      <p class="sticky-content">24시간 유기동물 구조단에서 신속히 유실/유기동물을 구조하여, <br> 각 구청 지정 동물보호센터로 인계하여 보호와 관리를 하도록 하고 있습니다.</p>
     </div>
     <div class="sticky-list">
+     <div class="media-query-img"><img src="img/b028a76e5883e5f3ff07d8c550d9432d.jpg" alt=""></div>
      <p class="sticky-middle-title">또 다른 가족을 만나는 일</p>
      <p class="sticky-content-title">해외 입양 프로젝트</p>
      <p class="sticky-content">대형견, 혼혈견, 장애견의 동물들에게 해외입양은 삶의 기회이기도 합니다. <br> 새로운 삶의 기회를 얻을 수 있다면 조금 멀리가더라도 가족을 만나는 지름길이
@@ -186,6 +182,7 @@
       있을 것입니다!</p>
     </div>
     <div class="sticky-list">
+     <div class="media-query-img"><img src="img/6718ac39c9e132494bbc16924e73f547.jpg" alt=""></div>
      <p class="sticky-middle-title">반려견을 위한 상품</p>
      <p class="sticky-content-title">저렴하고 합리적인 애견용품</p>
      <p class="sticky-content">사료, 배변패드, 집 기타 훈련에 필요한 용품과 장난감 및 수제간식 등 <br> 애견용품의 다양성과 자체 생산등을 통해 보다 저렴하게 이용할 수 있습니다.
@@ -193,49 +190,7 @@
     </div>
    </div>
   </div>
-  <!-- <ul>
-    <li class="sticky-img"><img src="img/dog-5191526_1280.jpg" alt=""></li>
-    <li class="sticky-img"><img src="img/3bfd606fe9f1f03dd443389bb6060c8e.jpg" alt=""></li>
-    <li class="sticky-img"><img src="img/5bbfc30dfe29c8b1431a53be432cbe4b.jpg" alt=""></li>
-    <li class="sticky-img"><img src="img/17633_temp_16674870312187view.jpg" alt=""></li>
-    <li class="sticky-img"><img src="img/6718ac39c9e132494bbc16924e73f547.jpg" alt=""></li>
-   </ul>
-   <ul class="text-content">
-    <li class="sticky-header-name">종합 유기견 보호소는 <p> 이런 활동을 하고 있습니다.</p>
-    </li>
-    <li class="sticky-list">
-     <p class="sticky-middle-title">새로운 가족을 찾고 있습니다.</p>
-     <p class="sticky-content-title">입양 전 준비활동</p>
-     <p class="sticky-content">유기견의 종류와 특성을 구분해 그룹, 개별 교육으로 진행하며 주차별로 간단한 명령어 이행, 배변훈련, 문제행동 교정, 미용, 산책 교육 등을 시키고 있습니다.
-     </p>
-    </li>
-    <li class="sticky-list">
-     <p class="sticky-middle-title">유기동물 구조 활동</p>
-     <p class="sticky-content-title">지역 내 동물단체와 협업을 통해 유기견을 구조에 나서고 있습니다.</p>
-     <p class="sticky-content">24시간 유기동물 구조단에서 신속히 유실/유기동물을 구조하여, 각 구청 지정 동물보호센터로 인계하여 보호와 관리를 하도록 하고 있습니다.</p>
-    </li>
-
-    <li class="sticky-list">
-     <p class="sticky-middle-title">또 다른 가족을 만나는 일</p>
-     <p class="sticky-content-title">해외 입양 프로젝트</p>
-     <p class="sticky-content">대형견, 혼혈견, 장애견의 동물들에게 해외입양은 삶의 기회이기도 합니다. 새로운 삶의 기회를 얻을 수 있다면 조금 멀리가더라도 가족을 만나는 지름길이 될 수
-      있을 것입니다!</p>
-    </li>
-    <li class="sticky-list">
-     <p class="sticky-middle-title">위치제공 내장칩 등록</p>
-     <p class="sticky-content-title">Gps내장칩 & 목걸이</p>
-     <p class="sticky-content">gps가 포함된 내장칩과 연계된 어플리케이션을 통해 실시간 이동 경로 및 더 빠르게 구조가 가능합니다.</p>
-    </li>
-    <li class="sticky-list">
-     <p class="sticky-middle-title">반려견을 위한 상품</p>
-     <p class="sticky-content-title">저렴하고 합리적인 애견용품</p>
-     <p class="sticky-content">사료, 배변패드, 집 기타 훈련에 필요한 용품과 장난감 및 수제간식 등 애견용품의 다양성과 자체 생산등을 통해 보다 저렴하게 이용할 수 있습니다.</p>
-    </li>
-   </ul> -->
  </div>
-
-
- <!-- <button type="button" class="btn-right"><a href="#">더 알아보기</a></button> -->
 
  <div class="adoption-container">
   <div class="adoption-review-text">
@@ -295,6 +250,7 @@
   <div class="container">
    <div class="text-title-wrapper">
     <p>보호소 입양 혜택</p>
+    <p>종합 유기견 보호소에서 다양한 혜택을 누려보세요.</p>
    </div>
    <div class="slide-wrapper">
     <ul class="slides">
