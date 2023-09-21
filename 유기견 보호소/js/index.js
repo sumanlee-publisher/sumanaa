@@ -53,9 +53,7 @@ const contentContainerWrapper =
 window.addEventListener("scroll", () => {
   // console.log(contentContainerWrapper[0].getBoundingClientRect().top);
   if (
-    contentContainerWrapper[0].getBoundingClientRect().top -
-      window.scrollY / 2 <
-    0
+    contentContainerWrapper[0].getBoundingClientRect().top - window.scrollY / 2 < 0
   ) {
     contentContainerWrapper[0].classList.add("active");
     // sectionMain.classList.add('change');
@@ -298,18 +296,20 @@ window.addEventListener("scroll", () => {
 
 // modal-content
 const burger = document.querySelector(".burger");
-const modalContentWrapper = document.querySelector(".modal-content-wrapper");
+const menuContainer = document.querySelector(".menu-container");
 function burgerButton() {
  burger.addEventListener("click", () => {
-  if(burger.classList.toggle("toggle")) {
-   modalContentWrapper.style.display = 'block';
+  if(burger.classList.toggle("toggle") ) {
+   menuContainer.style.transform = 'translateX(0)';
   }
   else {
-   modalContentWrapper.style.display = 'none';
+   menuContainer.style.transform = 'translateX(460px)';
   }
  });
+ 
 }
 burgerButton();
+
 // console.log("modalContainer");
 // toggle버튼을 실행하면, X가 되면
 // modal-content-wrapper가 display: block 상태가되고,
