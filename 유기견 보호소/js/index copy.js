@@ -231,14 +231,3 @@ window.addEventListener('scroll', ()=> {
 
 
 
-// modal-content
-const burger = document.querySelector('.burger');
-function burgerButton() {
- burger.addEventListener('click', ()=> {
-  burger.classList.toggle('toggle');
-
- })
-}
-burgerButton();
-const modalContainer = document.querySelector('.modal-container');
-console.log('modalContainer')

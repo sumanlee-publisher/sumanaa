@@ -1095,9 +1095,9 @@ header.open-menu {
 
 /* header-navi */
 @media screen and (max-width: 1300px) {
- .header-title {
+ /* .header-title {
   font-size: 18px;
- }
+ } */
 
  .header-navi,
  .header-right {
@@ -1197,48 +1197,60 @@ header.open-menu {
 
 /* 메뉴창 */
 @media screen and (min-width: 1300px) {
- .modal-container {
+ /* .modal-container {
   display: none;
- }
- 
+ } */
 }
 @media screen and (max-width: 1299px) {
- .header-title {
+ /* .header-title {
   display: none;
- }
+ } */
+
  .modal-container a {
+  /* font-size: 32px;
+  font-weight: bold; */
   color: black;
+
+ }
+ .modal-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: none;
  }
  .modal-container {
   font-family: 'NanumSquareNeo-Variable';
- /* width: 100%; */
- height: 100vh;
- background-color: white;
+ width: 100%;
+ /* height: 100vh; */
+ /* background-color: white; */
  display: flex;
  justify-content: center;
  align-items: center;
  flex-direction: column;
  /* padding: 0 12px; */
- /* margin: 0 auto; */
+ margin: 0 auto;
  position: relative;
- z-index: 100;
+ /* z-index: 100; */
+ border-radius: 20px;
 }
-.modal-container.closed {
- opacity: 0;
- transition: all .5s;
+.modal-content-wrapper.closed {
+ transition: transform .5s;
+ transform: translateY(-100px);
+ height: 0;
+
 }
 .modal-header {
  width: 100%;
  display: flex;
+ justify-content: space-between;
  align-items: center;
  position: absolute;
  top: 0;
  z-index: 100;
- justify-content: space-between;
 }
 .modal-title {
  font-size: 20px;
  font-weight: 700;
+ padding-left: 12px;
 }
 .notice-login-box {
  display: flex;
@@ -1274,16 +1286,21 @@ header.open-menu {
  margin: 5px;
  transition: all .5s;
 }
-.toggle .line-one {
+ .toggle .line-one {
  transform: rotate(-45deg) translate(-5px, 4px);
 }
-.toggle .line-two {
+ .toggle .line-two {
  opacity: 0;
 }
-.toggle .line-three {
+ .toggle .line-three {
  transform: rotate(45deg) translate(-8px, -6px);
 }
 
+.menu-container {
+ display: flex;
+ flex-direction: column;
+ margin: 100px 28px;
+}
 
 .menu-container ul {
  display: flex;

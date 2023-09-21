@@ -48,10 +48,15 @@ window.addEventListener("scroll", () => {
 });
 
 // scroll width: 100%;
-const contentContainerWrapper = document.getElementsByClassName("section-content");
+const contentContainerWrapper =
+  document.getElementsByClassName("section-content");
 window.addEventListener("scroll", () => {
   // console.log(contentContainerWrapper[0].getBoundingClientRect().top);
-  if (contentContainerWrapper[0].getBoundingClientRect().top - window.scrollY / 2 < 0) {
+  if (
+    contentContainerWrapper[0].getBoundingClientRect().top -
+      window.scrollY / 2 <
+    0
+  ) {
     contentContainerWrapper[0].classList.add("active");
     // sectionMain.classList.add('change');
   } else {
@@ -67,16 +72,17 @@ window.addEventListener("scroll", () => {
 const stickySection = document.getElementsByClassName("section-scroll-content");
 let opacityText = document.getElementsByClassName("opacity-text");
 const sectionMain = document.querySelector(".section-main");
-const stickyInitPos = stickySection[0].getBoundingClientRect().top + window.scrollY;
+const stickyInitPos =
+  stickySection[0].getBoundingClientRect().top + window.scrollY;
 window.addEventListener("scroll", () => {
   for (let i = 0; i < opacityText.length; i++) {
     // console.log(stickySection[0].getBoundingClientRect().top < -500-(i*700));
     if (stickySection[0].getBoundingClientRect().top < -500 - i * 500) {
       opacityText[i].classList.add("active");
-      sectionMain.classList.add('change');
-     } else {
+      sectionMain.classList.add("change");
+    } else {
       opacityText[i].classList.remove("active");
-      sectionMain.classList.remove('change');
+      sectionMain.classList.remove("change");
     }
   }
 });
@@ -104,7 +110,6 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
 
 // 자동 슬라이드
 let slides = document.querySelector(".slides"),
@@ -290,3 +295,27 @@ window.addEventListener("scroll", () => {
   //  //슬라이더를 이동
   //  slider.style.transform = `translateX(-${scrollLeft}px)`;
 });
+
+// modal-content
+const burger = document.querySelector(".burger");
+const modalContentWrapper = document.querySelector(".modal-content-wrapper");
+function burgerButton() {
+ burger.addEventListener("click", () => {
+  if(burger.classList.toggle("toggle")) {
+   modalContentWrapper.style.display = 'block';
+  }
+  else {
+   modalContentWrapper.style.display = 'none';
+  }
+ });
+}
+burgerButton();
+// console.log("modalContainer");
+// toggle버튼을 실행하면, X가 되면
+// modal-content-wrapper가 display: block 상태가되고,
+// toggle버튼을 다시 실행하면 display: none;이 된다.
+// if(burger.addEventListener('click', ()=> {})) {
+//  burger.classList.add('open');
+// } else {
+//  burger.classList.remove('open');
+// }
