@@ -228,3 +228,17 @@ window.addEventListener('scroll', ()=> {
 //  slider.style.transform = `translateX(-${scrollLeft}px)`;
 
 })
+
+
+
+// modal-content
+const burger = document.querySelector('.burger');
+function burgerButton() {
+ burger.addEventListener('click', ()=> {
+  burger.classList.toggle('toggle');
+
+ })
+}
+burgerButton();
+const modalContainer = document.querySelector('.modal-container');
+console.log('modalContainer')

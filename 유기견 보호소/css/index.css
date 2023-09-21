@@ -1194,17 +1194,135 @@ header.open-menu {
 }
 
 
+
 /* 메뉴창 */
-.hamburger-menu-container {
- height: 
+@media screen and (min-width: 1300px) {
+ .modal-container {
+  display: none;
+ }
+ 
+}
+@media screen and (max-width: 1299px) {
+ .header-title {
+  display: none;
+ }
+ .modal-container a {
+  color: black;
+ }
+ .modal-container {
+  font-family: 'NanumSquareNeo-Variable';
+ /* width: 100%; */
+ height: 100vh;
+ background-color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ /* padding: 0 12px; */
+ /* margin: 0 auto; */
+ position: relative;
+ z-index: 100;
+}
+.modal-container.closed {
+ opacity: 0;
+ transition: all .5s;
+}
+.modal-header {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ z-index: 100;
+ justify-content: space-between;
+}
+.modal-title {
+ font-size: 20px;
+ font-weight: 700;
+}
+.notice-login-box {
+ display: flex;
+ margin: 0 auto;
+ margin-top: 42px;
+}
+.notice-login-box ul li:hover a {
+ color: pink;
+ border: 1px solid pink;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+}
+.notice-login-box li::after {
+ content: '|';
+ color: black;
+}
+.notice-login-box li:last-child::after {
+ content: '';
+}
+
+.burger {
+ cursor: pointer;
+ padding: 12px;
+ position: relative;
+ left: -5px;
+}
+
+.burger div {
+ background-color: black;
+ width: 20px;
+ height: 3px;
+ margin: 5px;
+ transition: all .5s;
+}
+.toggle .line-one {
+ transform: rotate(-45deg) translate(-5px, 4px);
+}
+.toggle .line-two {
+ opacity: 0;
+}
+.toggle .line-three {
+ transform: rotate(45deg) translate(-8px, -6px);
+}
+
+
+.menu-container ul {
+ display: flex;
+ flex-wrap: wrap;
+ flex-shrink: 0;
+ gap: 16px;
+}
+.menu-wrapper {
+ width: 150px;
+ box-sizing: border-box;
+ margin: 0 auto;
+}
+.menu-name {
+ font-size: 22px;
+ margin: 24px 12px;
 
 }
-.hamburger-menu-container > ul {
+.sub-menu {
  display: flex;
  flex-direction: column;
- width: 100%;
+ margin: 24px 12px;
+ /* background-color: gray; */
+}
+.sub-menu li {
+ cursor: pointer;
+ /* border: 1px solid black; */
+}
+.sub-menu li:hover a {
+ color: pink;
+ border: 2px solid pink;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+}
+
+
 
 }
+
 
 
 
