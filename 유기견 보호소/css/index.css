@@ -1306,6 +1306,10 @@ header.open-menu {
  transition: all .5s;
  height: 100vh;
 }
+.menu-container.moved {
+    transition: none;
+    transform: translateX(460px);
+}
 .menu-notice-content-wrapper {
  display: flex;
  flex-direction: column;

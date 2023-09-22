@@ -30,7 +30,6 @@ function removeActive() {
 
 // 스크롤시 메뉴창 사라짐
 let zero = 0;
-cosnt 
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 100) {
@@ -47,6 +46,8 @@ window.addEventListener("scroll", () => {
 
   zero = window.scrollY;
 });
+
+// burgerButton();
 
 // scroll width: 100%;
 const contentContainerWrapper =
@@ -320,3 +321,31 @@ burgerButton();
 // } else {
 //  burger.classList.remove('open');
 // }
+
+const resetModal = 0;
+//스크롤하면 토글버튼 사라짐, 모달창 사라짐 트랜지션 0
+window.addEventListener('scroll', ()=> {
+  if(resetModal < window.scrollY) {
+    menuContainer.classList.add("moved");
+    burger.classList.remove("toggle");
+  }  else {
+    menuContainer.classList.remove("moved");
+  }
+  
+})
+
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY >= 100) {
+//     header.classList.add("scrolled");
+//   } else {
+//     header.classList.remove("scrolled");
+//   }
+
+//   if (zero < window.scrollY) {
+//     header.classList.add("hide");
+//   } else {
+//     header.classList.remove("hide");
+//   }
+
+//   zero = window.scrollY;
+// });
