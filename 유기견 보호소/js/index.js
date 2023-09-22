@@ -30,6 +30,7 @@ function removeActive() {
 
 // 스크롤시 메뉴창 사라짐
 let zero = 0;
+cosnt 
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 100) {
