@@ -1,3 +1,5 @@
+
+
 const menuTitle = document.getElementsByClassName("menu-title");
 const header = document.querySelector("header");
 const changeImg = document.getElementsByClassName("change-img");
@@ -304,6 +306,7 @@ function closeBurger() {
   menuContainer.style.transform = 'translateX(460px)';
     burger.classList.remove('toggle');
 }
+
 function burgerButton() {
  burger.addEventListener("click", () => {
   if(burger.classList.contains('toggle')){
@@ -334,15 +337,15 @@ burgerButton();
 
 const resetModal = 0;
 //스크롤하면 토글버튼 사라짐, 모달창 사라짐 트랜지션 0
-window.addEventListener('scroll', ()=> {
-  if(resetModal < window.scrollY) {
-    menuContainer.classList.add("moved");
-    burger.classList.remove("toggle");
-  }  else {
-    menuContainer.classList.remove("moved");
-  }
+// window.addEventListener('scroll', ()=> {
+//   if(resetModal < window.scrollY) {
+//     menuContainer.classList.add("moved");
+//     burger.classList.remove("toggle");
+//   }  else {
+//     menuContainer.classList.remove("moved");
+//   }
   
-})
+// })
 
 // window.addEventListener("scroll", () => {
 //   if (window.scrollY >= 100) {
