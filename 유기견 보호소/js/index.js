@@ -299,17 +299,27 @@ window.addEventListener("scroll", () => {
 // modal-content
 const burger = document.querySelector(".burger");
 const menuContainer = document.querySelector(".menu-container");
+
+function closeBurger() {
+  menuContainer.style.transform = 'translateX(460px)';
+    burger.classList.remove('toggle');
+}
 function burgerButton() {
  burger.addEventListener("click", () => {
-  if(burger.classList.toggle("toggle") ) {
-   menuContainer.style.transform = 'translateX(0)';
+  if(burger.classList.contains('toggle')){
+    closeBurger();
+  }else {
+    menuContainer.style.transform = 'translateX(0)';
+    burger.classList.add('toggle');
   }
-  else {
-   menuContainer.style.transform = 'translateX(460px)';
-  }
+
  });
  
 }
+window.addEventListener('scroll',()=>{
+  closeBurger();
+})
+
 burgerButton();
 
 // console.log("modalContainer");
